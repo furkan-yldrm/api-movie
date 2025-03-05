@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirements", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -13,9 +13,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{B38EABA0-7676-4CFD-950F-639A76DB98D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "movie.domain", "Core\movie.domain\movie.domain.csproj", "{6DE5D994-7662-4A11-8919-608925163FAA}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DE5D994-7662-4A11-8919-608925163FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE5D994-7662-4A11-8919-608925163FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE5D994-7662-4A11-8919-608925163FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE5D994-7662-4A11-8919-608925163FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6DE5D994-7662-4A11-8919-608925163FAA} = {4B5D974D-F249-4CE5-AD26-917D64C30FA3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {438240F3-F211-4402-A561-F97250B96941}
