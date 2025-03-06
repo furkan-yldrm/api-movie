@@ -1,4 +1,4 @@
-﻿using movie.application.Features.CQRS.Commands.CagtegoryCommands;
+﻿using movie.application.Features.CQRS.Commands.CategoryCommands;
 using movie.domain.Entities;
 using movie.persistence.Context;
 using System;

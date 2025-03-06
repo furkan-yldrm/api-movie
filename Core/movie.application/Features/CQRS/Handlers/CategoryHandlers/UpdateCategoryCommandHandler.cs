@@ -8,19 +8,20 @@ using System.Threading.Tasks;
 
 namespace movie.application.Features.CQRS.Handlers.CategoryHandlers
 {
-    public class RemoveCategoryCommandHandler
+    public class UpdateCategoryCommandHandler
     {
         private readonly MovieContext _context;
 
-        public RemoveCategoryCommandHandler(MovieContext context)
+        public UpdateCategoryCommandHandler(MovieContext context)
         {
             _context = context;
         }
-        public async void Handle(RemoveCategoryCommand command)
+
+        public async void Handle(UpdateCategoryCommand command)
         {
             var value = await _context.Categories.FindAsync(command.CategoryId);
-            _context.Categories.Remove(value);
-            await _context.SaveChangesAsync();         
+            value.CategoryName = command.CategoryName;
+            await _context.SaveChangesAsync();
         }
     }
 }

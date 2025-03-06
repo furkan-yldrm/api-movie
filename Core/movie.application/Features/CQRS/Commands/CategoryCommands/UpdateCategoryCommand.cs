@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace movie.application.Features.CQRS.Commands.CagtegoryCommands
+namespace movie.application.Features.CQRS.Commands.CategoryCommands
 {
-    public class CreateCategoryCommand
+    public class UpdateCategoryCommand
     {
+        public int CategoryId { get; set; }
         public string CategoryName { get; set; }
     }
 }
