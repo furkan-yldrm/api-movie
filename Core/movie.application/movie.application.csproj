@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\CQRS\Queries\CategoryQueries\" />
-    <Folder Include="Features\CQRS\Queries\MovieQueries\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Infra\movie.persistence\movie.persistence.csproj" />
     <ProjectReference Include="..\movie.domain\movie.domain.csproj" />
   </ItemGroup>
