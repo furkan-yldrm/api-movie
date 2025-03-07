@@ -8,6 +8,13 @@ namespace movie.application.Features.CQRS.Commands.CategoryCommands
 {
     public class RemoveCategoryCommand
     {
+        private int id;
+
+        public RemoveCategoryCommand(int id)
+        {
+            this.id = id;
+        }
+
         public int CategoryId { get; set; }
     }
 }
