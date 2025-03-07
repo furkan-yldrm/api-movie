@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Core\movie.application\movie.application.csproj" />
     <ProjectReference Include="..\..\Infra\movie.persistence\movie.persistence.csproj" />
   </ItemGroup>
 
